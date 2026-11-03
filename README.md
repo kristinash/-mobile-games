@@ -85,9 +85,11 @@
 - среднее число раундов (без выбросов);
 - долю игроков, которые не сыграли ни одного раунда.
 
-Скриншоты: папка [`screenshots/`](screenshots/).
+Скриншоты: 
+<img width="905" height="320" alt="image" src="https://github.com/user-attachments/assets/de5ab6b1-2da3-4d30-989f-a7b9491c0547" />
 
-> Фильтры по группам и датам пока не реализованы, это следующий шаг.
+
+<img width="935" height="591" alt="image" src="https://github.com/user-attachments/assets/e1fd98b1-8879-4c93-9bf5-0c04e1041ba8" />
 
 Пример SQL-запроса (удержание на 7-й день):
 
@@ -97,15 +99,6 @@ FROM players
 GROUP BY version;
 ```
 
-## Структура репозитория
-
-```
-├── ab_test_cookie_cats.ipynb   # анализ: проверка данных, z-тест, бутстреп, графики
-├── screenshots/                # скриншоты дашборда
-└── README.md
-```
-
-Данные (`cookie_cats.csv`) не хранятся в репозитории, скачайте их по ссылке выше.
 
 ## Как запустить
 
@@ -113,6 +106,4 @@ GROUP BY version;
 2. Установите зависимости: `pip install pandas numpy scipy statsmodels matplotlib`.
 3. Откройте `ab_test_cookie_cats.ipynb` в Jupyter или Google Colab и выполните ячейки по порядку.
 
-## Источник и вклад
 
-За основу взят разбор этого датасета на Kaggle. Формулировка гипотез, проверка качества данных, z-тест с доверительными интервалами, бутстреп, графики, выводы и дашборд выполнены самостоятельно.
